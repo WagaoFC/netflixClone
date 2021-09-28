@@ -25,6 +25,39 @@ header.black {
   height: 100%;
 }
 
+.links {
+  margin-right: auto;
+}
+
+.links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.links a:hover {
+  color: #999;
+}
+
+.icons {
+  margin: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.icons .search,
+.icons .notifications {
+  margin: 15px;
+}
+
+.icons .search:hover,
+.icons .notifications:hover {
+  color: #999;
+}
+
 .header--user {
   height: 35px;
 }
