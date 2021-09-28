@@ -4,6 +4,7 @@ import tbdb from './tmdb';
 import MovieRow from './components/movieRow';
 import FeaturedMovie from './components/featuredMovie';
 import Header from './components/header';
+import Loader from './components/loader';
 
 export default () => {
 
@@ -66,6 +67,11 @@ export default () => {
         Dados apresentados foram capturados via API The Movie DB
       </footer>
 
+      {movieList.length <= 0 &&
+        <div className="loading">
+          <Loader />
+        </div>
+      }
     </div>
   )
 }
