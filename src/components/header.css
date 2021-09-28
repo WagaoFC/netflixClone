@@ -41,6 +41,12 @@ header.black {
   color: #999;
 }
 
+@media (max-width: 760px) {
+  .links a {
+    opacity: 0;
+  }
+}
+
 .icons {
   margin: 25px;
   cursor: pointer;
